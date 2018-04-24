@@ -21,13 +21,6 @@ const config = {
         test: /\.jsx$/,
         loader: 'babel-loader'
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader'
-      //   ]
-      // },
       {
         test: /\.(gif|jpg|jpeg|png|svg)$/,
         use: [{
@@ -107,7 +100,9 @@ if (isDev) {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
-    new webpack.optimize.CommonsChunkPlugin({})
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'runtime'
+    })
   )
 }
 
