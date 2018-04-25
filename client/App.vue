@@ -8,9 +8,9 @@
 </template>
 
 <script type="text/ecmascript-6">
-import MHeader from './todo/header.vue'
-import MFooter from './todo/footer.jsx'
-import todo from './todo/todo.vue'
+import MHeader from './layout/header.vue'
+import MFooter from './layout/footer.jsx'
+import todo from './views/todo/todo.vue'
 
 export default {
   data () {
